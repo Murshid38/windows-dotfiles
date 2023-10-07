@@ -1,0 +1,178 @@
+{
+  "workbench.colorCustomizations": {
+    "editorCursor.foreground": "#ffffff",
+    "terminalCursor.foreground": "#ffffff"
+  },
+
+  "editor.fontFamily": "JetBrains Mono",
+  "editor.lineHeight": 22,
+  "files.autoSave": "onFocusChange",
+  "editor.wordWrap": "on",
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "workbench.iconTheme": "easy-icons",
+
+  "al.enableCodeActions": true,
+  "alOutline.completionProviders": ["VariableNamesWithType"],
+  "alOutline.codeCleanupActions": [
+    "RemoveBeginEnd",
+    "RemoveEmptyLines",
+    "TrimTrailingWhitespace",
+    "RemoveUnusedVariables",
+    "RemoveEmptyTriggers",
+    "RemoveEmptySections"
+  ],
+  "alOutline.defaultRemoveUnusedVariablesSettings": {
+    "removeGlobalVariables": true,
+    "removeLocalVariables": true,
+    "removeLocalMethodParameters": true
+  },
+  "alOutline.defaultRemoveEmptyTriggersSettings": {
+    "removeTriggers": true,
+    "removeSubscribers": true,
+    "ignoreComments": false
+  },
+  "al.browser": "Chrome",
+
+  "liveServer.settings.CustomBrowser": "firefox",
+  "workbench.startupEditor": "none",
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.inlineSuggest.enabled": true,
+
+  "[al]": {
+    "editor.wordBasedSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.formatOnSave": true,
+    "editor.semanticHighlighting.enabled": true
+  },
+
+  "al.enableCodeAnalysis": true,
+  "al.codeAnalyzers": ["${CodeCop}", "${PerTenantExtensionCop}", "${UICop}"],
+
+  "breadcrumbs.enabled": false,
+  "editor.lineNumbers": "relative",
+  "editor.linkedEditing": true,
+  "editor.cursorSurroundingLines": 8,
+
+  "projectManager.any.baseFolders": ["C:\\Users\\mursh\\Documents\\AL"],
+  "rojectManager.sortList": "Recent",
+
+  "vim.leader": "<Space>",
+  "vim.hlsearch": false,
+  "vim.useSystemClipboard": true,
+  "vim.easymotion": true,
+  "vim.surround": true,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // NAVIGATION
+    // switch b/w buffers
+    { "before": ["<S-h>"], "commands": [":bprevious"] },
+    { "before": ["<S-l>"], "commands": [":bnext"] },
+    // splits
+    { "before": ["leader", "v"], "commands": [":vsplit"] },
+    { "before": ["leader", "s"], "commands": [":split"] },
+    // panes
+    {
+      "before": ["leader", "h"],
+      "commands": ["workbench.action.focusLeftGroup"]
+    },
+    {
+      "before": ["leader", "j"],
+      "commands": ["workbench.action.focusBelowGroup"]
+    },
+    {
+      "before": ["leader", "k"],
+      "commands": ["workbench.action.focusAboveGroup"]
+    },
+    {
+      "before": ["leader", "l"],
+      "commands": ["workbench.action.focusRightGroup"]
+    },
+    {
+      "before": ["leader", "o"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+    {
+      "before": ["leader", "a", "o"],
+      "commands": ["workbench.action.closeOtherEditors"]
+    },
+    // NICE TO HAVE
+    { "before": ["leader", "w"], "commands": [":w!"] },
+    { "before": ["leader", "q"], "commands": [":q!"] },
+    { "before": ["leader", "x"], "commands": [":x!"] },
+    {
+      "before": ["[", "d"],
+      "commands": ["editor.action.marker.prev"]
+    },
+    {
+      "before": ["]", "d"],
+      "commands": ["editor.action.marker.next"]
+    },
+    {
+      "before": ["<leader>", "c", "a"],
+      "commands": ["editor.action.quickFix"]
+    },
+    { "before": ["leader", "f"], "commands": ["workbench.action.quickOpen"] },
+
+    {
+      "before": ["S-k"],
+      "commands": ["editor.action.showDefinitionPreviewHover"]
+    },
+    {
+      "before": ["leader", "i"],
+      "commands": ["extension.toggleBool"]
+    },
+    {
+      "before": ["leader", "d", "p"],
+      "commands": ["al.publish"]
+    },
+    {
+      "before": ["leader", "d", "b"],
+      "commands": ["editor.debug.action.toggleBreakpoint"]
+    },
+    {
+      "before": ["leader", "d", "n"],
+      "commands": ["workbench.action.debug.stepOver"]
+    },
+    {
+      "before": ["leader", "d", "o"],
+      "commands": ["workbench.action.debug.stepOut"]
+    },
+    {
+      "before": ["leader", "d", "i"],
+      "commands": ["workbench.action.debug.stepInto"]
+    },
+    {
+      "before": ["leader", "d", "s"],
+      "commands": ["workbench.action.debug.stop"],
+      "when": ["inDebugMode && !focusedSessionIsAttach"]
+    },
+    {
+      "before": ["leader", "p"],
+      "commands": ["al.publishNoDebug"]
+    }
+  ],
+
+  "vim.visualModeKeyBindings": [
+    // Stay in visual mode while indenting
+    { "before": ["<"], "commands": ["editor.action.outdentLines"] },
+    { "before": [">"], "commands": ["editor.action.indentLines"] },
+    // Move selected lines while staying in visual mode
+    { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
+    { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
+    // toggle comment selection
+    { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] }
+  ],
+
+  "editor.minimap.enabled": false,
+  "terminal.integrated.fontFamily": "MesloLGM Nerd Font",
+  "workbench.sideBar.location": "right",
+  "window.titleBarStyle": "custom",
+  "problems.autoReveal": false,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "vscode-neovim.neovimExecutablePaths.win32": "C:\\tools\\neovim\\nvim-win64\\bin\\nvim.exe",
+  "vscode-neovim.neovimInitVimPaths.win32": "C:\\Users\\mursh\\AppData\\Local\\nvim\\init.lua",
+  "workbench.activityBar.visible": false,
+  "workbench.colorTheme": "Doom Emacs"
+}
