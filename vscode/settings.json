@@ -134,6 +134,10 @@
     {
       "before": ["leader", "g", "c"],
       "commands": ["git.commitAll"]
+    },
+    {
+      "before": ["leader", "g", "m"],
+      "commands": ["git.commitAll"]
     }
   ],
 
