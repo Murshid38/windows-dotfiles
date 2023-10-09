@@ -10,44 +10,13 @@
   "editor.wordWrap": "on",
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
+  "editor.inlayHints.enabled": "offUnlessPressed",
   "workbench.iconTheme": "easy-icons",
-
-  "al.enableCodeActions": true,
-  "alOutline.completionProviders": ["VariableNamesWithType"],
-  "alOutline.codeCleanupActions": [
-    "RemoveBeginEnd",
-    "RemoveEmptyLines",
-    "TrimTrailingWhitespace",
-    "RemoveUnusedVariables",
-    "RemoveEmptyTriggers",
-    "RemoveEmptySections"
-  ],
-  "alOutline.defaultRemoveUnusedVariablesSettings": {
-    "removeGlobalVariables": true,
-    "removeLocalVariables": true,
-    "removeLocalMethodParameters": true
-  },
-  "alOutline.defaultRemoveEmptyTriggersSettings": {
-    "removeTriggers": true,
-    "removeSubscribers": true,
-    "ignoreComments": false
-  },
-  "al.browser": "Chrome",
 
   "liveServer.settings.CustomBrowser": "firefox",
   "workbench.startupEditor": "none",
   "security.workspace.trust.untrustedFiles": "open",
   "editor.inlineSuggest.enabled": true,
-
-  "[al]": {
-    "editor.wordBasedSuggestions": false,
-    "editor.suggestSelection": "first",
-    "editor.formatOnSave": true,
-    "editor.semanticHighlighting.enabled": true
-  },
-
-  "al.enableCodeAnalysis": true,
-  "al.codeAnalyzers": ["${CodeCop}", "${PerTenantExtensionCop}", "${UICop}"],
 
   "breadcrumbs.enabled": false,
   "editor.lineNumbers": "relative",
@@ -55,7 +24,7 @@
   "editor.cursorSurroundingLines": 8,
 
   "projectManager.any.baseFolders": ["C:\\Users\\mursh\\Documents\\AL"],
-  "rojectManager.sortList": "Recent",
+  "projectManager.sortList": "Recent",
 
   "vim.leader": "<Space>",
   "vim.hlsearch": false,
@@ -149,6 +118,22 @@
     {
       "before": ["leader", "p"],
       "commands": ["al.publishNoDebug"]
+    },
+    {
+      "before": ["leader", "g", "o"],
+      "commands": ["git.checkout"]
+    },
+    {
+      "before": ["leader", "g", "f"],
+      "commands": ["git.pullFrom"]
+    },
+    {
+      "before": ["leader", "g", "s"],
+      "commands": ["git.sync"]
+    },
+    {
+      "before": ["leader", "g", "c"],
+      "commands": ["git.commitAll"]
     }
   ],
 
@@ -171,8 +156,50 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "vscode-neovim.neovimExecutablePaths.win32": "C:\\tools\\neovim\\nvim-win64\\bin\\nvim.exe",
-  "vscode-neovim.neovimInitVimPaths.win32": "C:\\Users\\mursh\\AppData\\Local\\nvim\\init.lua",
+
+  "workbench.colorTheme": "Doom Emacs",
   "workbench.activityBar.visible": false,
-  "workbench.colorTheme": "Doom Emacs"
+
+  //AL related settings
+  "CRS.ObjectNameSuffix": "SqBase",
+  "CRS.FileNamePattern": "<ObjectId> <ObjectName>.al",
+  "CRS.FileNamePatternExtensions": "<ObjectId> <BaseName>.al",
+  "CRS.RemoveSuffixFromFilename": true,
+
+  "al.inlayhints.functionReturnTypes.enabled": true,
+  "al.inlayhints.parameterNames.enabled": true,
+  "alOutline.enableCodeCopFixes": true,
+
+  "al.enableCodeActions": true,
+  "alOutline.completionProviders": ["VariableNamesWithType"],
+  "alOutline.codeCleanupActions": [
+    "RemoveBeginEnd",
+    "RemoveEmptyLines",
+    "TrimTrailingWhitespace",
+    "RemoveUnusedVariables",
+    "RemoveEmptyTriggers",
+    "RemoveEmptySections"
+  ],
+  "alOutline.defaultRemoveUnusedVariablesSettings": {
+    "removeGlobalVariables": true,
+    "removeLocalVariables": true,
+    "removeLocalMethodParameters": true
+  },
+  "alOutline.defaultRemoveEmptyTriggersSettings": {
+    "removeTriggers": true,
+    "removeSubscribers": true,
+    "ignoreComments": false
+  },
+
+  "al.browser": "Chrome",
+
+  "[al]": {
+    "editor.wordBasedSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.formatOnSave": true,
+    "editor.semanticHighlighting.enabled": true
+  },
+
+  "al.enableCodeAnalysis": true
+  // "al.codeAnalyzers": ["${CodeCop}", "${PerTenantExtensionCop}", "${UICop}"]
 }
