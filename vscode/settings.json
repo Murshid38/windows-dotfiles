@@ -41,6 +41,10 @@
       "before": ["leader", "p", "f"],
       "commands": ["workbench.action.quickOpen"]
     },
+    {
+      "before": ["leader", "r"],
+      "commands": ["workbench.action.openRecent"]
+    },
     // switch b/w buffers
     { "before": ["<S-h>"], "commands": [":bprevious"] },
     { "before": ["<S-l>"], "commands": [":bnext"] },
@@ -124,6 +128,10 @@
       "when": ["inDebugMode && !focusedSessionIsAttach"]
     },
     {
+      "before": ["leader", "g", "s"],
+      "commands": ["workbench.view.scm"]
+    },
+    {
       "before": ["leader", "p", "p"],
       "commands": ["al.publishNoDebug"]
     },
@@ -140,7 +148,7 @@
       "commands": ["git.stageAll"]
     },
     {
-      "before": ["leader", "g", "s"],
+      "before": ["leader", "g", "g"],
       "commands": ["git.sync"]
     },
     {
@@ -242,9 +250,9 @@
   },
 
   "al.enableCodeAnalysis": true,
-  "workbench.activityBar.visible": false,
   "git.useEditorAsCommitInput": false,
   "workbench.colorTheme": "Everforest Dark",
-  "glassit.alpha": 220
+  "glassit.alpha": 220,
+  "workbench.activityBar.visible": false
   // "al.codeAnalyzers": ["${CodeCop}", "${PerTenantExtensionCop}", "${UICop}"]
 }
