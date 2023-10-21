@@ -27,11 +27,6 @@
   },
   // NAVIGATION
   {
-    "key": "ctrl+j",
-    "command": "-extension.vim_ctrl+j",
-    "when": "editorTextFocus && vim.active && vim.use<C-j> && !inDebugRepl"
-  },
-  {
     "key": "ctrl+shift+o",
     "command": "projectManager.listProjects"
   },
@@ -86,10 +81,6 @@
     "key": "ctrl+alt+z",
     "command": "workbench.action.toggleFullScreen"
   },
-  {
-    "key": "ctrl+alt+.",
-    "command": "workbench.debug.action.focusWatchView"
-  },
   // FILE TREE
   {
     "key": "ctrl+e",
@@ -128,11 +119,6 @@
   },
   {
     "key": "ctrl+shift+.",
-    "command": "-breadcrumbs.toggleToOn",
-    "when": "!config.breadcrumbs.enabled"
-  },
-  {
-    "key": "ctrl+shift+.",
     "command": "-editor.action.inPlaceReplace.down",
     "when": "editorTextFocus && !editorReadonly"
   },
@@ -143,23 +129,210 @@
   },
   {
     "key": "ctrl+shift+.",
+    "command": "-breadcrumbs.toggleToOn",
+    "when": "!config.breadcrumbs.enabled"
+  },
+  {
+    "key": "ctrl+shift+.",
     "command": "editor.debug.action.selectionToWatch"
+  },
+  {
+    "key": "ctrl+shift+,",
+    "command": "-editor.action.inPlaceReplace.up",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+alt+.",
+    "command": "workbench.debug.action.focusWatchView"
   },
   {
     "key": "ctrl+shift+alt+.",
     "command": "workbench.debug.viewlet.action.removeAllWatchExpressions"
   },
   {
-    "key": "ctrl+shift+g",
-    "command": "-workbench.view.scm",
-    "when": "workbench.scm.active"
+    "key": "space",
+    "command": "-debug.toggleBreakpoint",
+    "when": "breakpointsFocused && !inputFocus"
   },
   {
-    "key": "ctrl+g",
-    "command": "workbench.view.scm"
+    "key": "ctrl+alt+q",
+    "command": "revealFileInOS"
+  },
+  {
+    "key": "shift+alt+r",
+    "command": "-revealFileInOS",
+    "when": "!editorFocus"
+  },
+  {
+    "key": "ctrl+alt+e",
+    "command": "workbench.files.action.showActiveFileInExplorer"
+  },
+  {
+    "key": "ctrl+a",
+    "command": "extension.vim_ctrl+a",
+    "when": "editorTextFocus && vim.active && vim.use<C-x> && !inDebugRepl"
+  },
+  {
+    "key": "alt+p",
+    "command": "workbench.action.pinEditor",
+    "when": "!activeEditorIsPinned"
+  },
+  {
+    "key": "ctrl+k shift+enter",
+    "command": "-workbench.action.pinEditor",
+    "when": "!activeEditorIsPinned"
+  },
+  {
+    "key": "alt+p",
+    "command": "workbench.action.unpinEditor",
+    "when": "activeEditorIsPinned"
+  },
+  {
+    "key": "ctrl+k shift+enter",
+    "command": "-workbench.action.unpinEditor",
+    "when": "activeEditorIsPinned"
+  },
+  {
+    "key": "ctrl+1",
+    "command": "editor.foldLevel1",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+k ctrl+1",
+    "command": "-editor.foldLevel1",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+2",
+    "command": "editor.foldLevel2",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+k ctrl+2",
+    "command": "-editor.foldLevel2",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+k ctrl+9",
+    "command": "-editor.unfoldAllMarkerRegions",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+9",
+    "command": "editor.unfoldAll",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+k ctrl+j",
+    "command": "-editor.unfoldAll",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+3",
+    "command": "editor.foldLevel3",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+k ctrl+3",
+    "command": "-editor.foldLevel3",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+4",
+    "command": "editor.foldLevel4",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+k ctrl+4",
+    "command": "-editor.foldLevel4",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+5",
+    "command": "editor.foldLevel5",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+k ctrl+5",
+    "command": "-editor.foldLevel5",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+6",
+    "command": "editor.foldLevel6",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+k ctrl+6",
+    "command": "-editor.foldLevel6",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+7",
+    "command": "editor.foldLevel7",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+k ctrl+7",
+    "command": "-editor.foldLevel7",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+0",
+    "command": "editor.unfoldRecursively",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+k ctrl+]",
+    "command": "-editor.unfoldRecursively",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+shift+h",
+    "command": "-workbench.action.replaceInFiles"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "-editor.action.startFindReplaceAction",
+    "when": "editorFocus || editorIsOpen"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "editor.action.startFindReplaceAction"
+  },
+  {
+    "key": "ctrl+k ctrl+x",
+    "command": "-editor.action.trimTrailingWhitespace",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+b",
+    "command": "-extension.toggleBool",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+b",
+    "command": "-workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "ctrl+alt+b",
+    "command": "-workbench.action.toggleAuxiliaryBar"
   },
   {
     "key": "alt+b",
     "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
+    "key": "ctrl+z",
+    "command": "-extension.vim_ctrl+z",
+    "when": "editorTextFocus && vim.active && vim.use<C-z> && !inDebugRepl"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "workbench.action.quickOpen"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "-workbench.action.quickOpen"
   }
 ]

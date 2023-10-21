@@ -1,10 +1,11 @@
 {
   "workbench.colorCustomizations": {
     "editorCursor.foreground": "#ffffff",
+    "editorCursor.background": "#000",
     "terminalCursor.foreground": "#ffffff"
   },
 
-  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontFamily": "FiraCode NFM Retina",
   "editor.lineHeight": 22,
   "files.autoSave": "onFocusChange",
   "editor.wordWrap": "on",
@@ -12,8 +13,8 @@
   "editor.formatOnType": true,
   "editor.inlayHints.enabled": "offUnlessPressed",
   "workbench.iconTheme": "easy-icons",
+  "workbench.editor.revealIfOpen": true,
 
-  "liveServer.settings.CustomBrowser": "firefox",
   "workbench.startupEditor": "none",
   "security.workspace.trust.untrustedFiles": "open",
   "editor.inlineSuggest.enabled": true,
@@ -29,10 +30,17 @@
   "vim.leader": "<Space>",
   "vim.hlsearch": false,
   "vim.useSystemClipboard": true,
-  "vim.easymotion": true,
+  "vim.easymotion": false,
+  "vim.camelCaseMotion.enable": true,
   "vim.surround": true,
+
   "vim.normalModeKeyBindingsNonRecursive": [
     // NAVIGATION
+    //quick open
+    {
+      "before": ["leader", "p", "f"],
+      "commands": ["workbench.action.quickOpen"]
+    },
     // switch b/w buffers
     { "before": ["<S-h>"], "commands": [":bprevious"] },
     { "before": ["<S-l>"], "commands": [":bnext"] },
@@ -40,10 +48,6 @@
     { "before": ["leader", "v"], "commands": [":vsplit"] },
     { "before": ["leader", "s"], "commands": [":split"] },
     // panes
-    {
-      "before": ["leader", "h"],
-      "commands": ["workbench.action.focusLeftGroup"]
-    },
     {
       "before": ["leader", "j"],
       "commands": ["workbench.action.focusBelowGroup"]
@@ -61,12 +65,11 @@
       "commands": ["workbench.action.closeActiveEditor"]
     },
     {
-      "before": ["leader", "a", "o"],
+      "before": ["leader", "c", "o"],
       "commands": ["workbench.action.closeOtherEditors"]
     },
     // NICE TO HAVE
     { "before": ["leader", "w"], "commands": [":w!"] },
-    { "before": ["leader", "q"], "commands": [":q!"] },
     { "before": ["leader", "x"], "commands": [":x!"] },
     {
       "before": ["[", "d"],
@@ -77,17 +80,16 @@
       "commands": ["editor.action.marker.next"]
     },
     {
-      "before": ["<leader>", "c", "a"],
+      "before": ["leader", "c", "a"],
       "commands": ["editor.action.quickFix"]
     },
-    { "before": ["leader", "f"], "commands": ["workbench.action.quickOpen"] },
 
     {
       "before": ["S-k"],
       "commands": ["editor.action.showDefinitionPreviewHover"]
     },
     {
-      "before": ["leader", "i"],
+      "before": ["leader", "t"],
       "commands": ["extension.toggleBool"]
     },
     {
@@ -99,16 +101,22 @@
       "commands": ["editor.debug.action.toggleBreakpoint"]
     },
     {
-      "before": ["leader", "d", "n"],
-      "commands": ["workbench.action.debug.stepOver"]
+      // "before": ["leader", "d", "n"],
+      "before": ["leader", "j"],
+      "commands": ["workbench.action.debug.stepOver"],
+      "when": ["inDebugMode"]
     },
     {
-      "before": ["leader", "d", "o"],
-      "commands": ["workbench.action.debug.stepOut"]
+      // "before": ["leader", "d", "o"],
+      "before": ["leader", "k"],
+      "commands": ["workbench.action.debug.stepOut"],
+      "when": ["inDebugMode"]
     },
     {
-      "before": ["leader", "d", "i"],
-      "commands": ["workbench.action.debug.stepInto"]
+      // "before": ["leader", "d", "i"],
+      "before": ["leader", "i"],
+      "commands": ["workbench.action.debug.stepInto"],
+      "when": ["inDebugMode"]
     },
     {
       "before": ["leader", "d", "s"],
@@ -116,7 +124,7 @@
       "when": ["inDebugMode && !focusedSessionIsAttach"]
     },
     {
-      "before": ["leader", "p"],
+      "before": ["leader", "p", "p"],
       "commands": ["al.publishNoDebug"]
     },
     {
@@ -126,6 +134,10 @@
     {
       "before": ["leader", "g", "f"],
       "commands": ["git.pullFrom"]
+    },
+    {
+      "before": ["leader", "g", "a"],
+      "commands": ["git.stageAll"]
     },
     {
       "before": ["leader", "g", "s"],
@@ -138,6 +150,34 @@
     {
       "before": ["leader", "g", "m"],
       "commands": ["git.commitMessageAccept"]
+    },
+    {
+      "before": ["leader", "g", "u"],
+      "commands": ["git.undoCommit"]
+    },
+    {
+      "before": ["leader", "a"],
+      "commands": ["vscode-harpoon.addEditor"]
+    },
+    {
+      "before": ["leader", "e"],
+      "commands": ["vscode-harpoon.editEditors"]
+    },
+    {
+      "before": ["leader", "q", "p"],
+      "commands": ["vscode-harpoon.editorQuickPick"]
+    },
+    {
+      "before": ["<C-j>"],
+      "commands": ["vscode-harpoon.gotoEditor1"]
+    },
+    {
+      "before": ["<C-k>"],
+      "commands": ["vscode-harpoon.gotoEditor2"]
+    },
+    {
+      "before": ["leader", "c", "c"],
+      "commands": ["code-runner.run"]
     }
   ],
 
@@ -160,9 +200,6 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-
-  "workbench.colorTheme": "Doom Emacs",
-  "workbench.activityBar.visible": false,
 
   //AL related settings
   "CRS.ObjectNameSuffix": "SqBase",
@@ -204,6 +241,10 @@
     "editor.semanticHighlighting.enabled": true
   },
 
-  "al.enableCodeAnalysis": true
+  "al.enableCodeAnalysis": true,
+  "workbench.activityBar.visible": false,
+  "git.useEditorAsCommitInput": false,
+  "workbench.colorTheme": "Everforest Dark",
+  "glassit.alpha": 220
   // "al.codeAnalyzers": ["${CodeCop}", "${PerTenantExtensionCop}", "${UICop}"]
 }
