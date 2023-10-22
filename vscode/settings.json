@@ -105,19 +105,16 @@
       "commands": ["editor.debug.action.toggleBreakpoint"]
     },
     {
-      // "before": ["leader", "d", "n"],
       "before": ["leader", "j"],
       "commands": ["workbench.action.debug.stepOver"],
       "when": ["inDebugMode"]
     },
     {
-      // "before": ["leader", "d", "o"],
       "before": ["leader", "k"],
       "commands": ["workbench.action.debug.stepOut"],
       "when": ["inDebugMode"]
     },
     {
-      // "before": ["leader", "d", "i"],
       "before": ["leader", "i"],
       "commands": ["workbench.action.debug.stepInto"],
       "when": ["inDebugMode"]
@@ -157,7 +154,7 @@
     },
     {
       "before": ["leader", "g", "m"],
-      "commands": ["git.commitMessageAccept"]
+      "commands": ["git.merge"]
     },
     {
       "before": ["leader", "g", "u"],
@@ -182,6 +179,10 @@
     {
       "before": ["<C-k>"],
       "commands": ["vscode-harpoon.gotoEditor2"]
+    },
+    {
+      "before": ["<C-l>"],
+      "commands": ["vscode-harpoon.gotoEditor3"]
     },
     {
       "before": ["leader", "c", "c"],
@@ -251,7 +252,7 @@
 
   "al.enableCodeAnalysis": true,
   "git.useEditorAsCommitInput": false,
-  "workbench.colorTheme": "Everforest Dark",
+  "workbench.colorTheme": "Kanagawa",
   "glassit.alpha": 220,
   "workbench.activityBar.visible": false
   // "al.codeAnalyzers": ["${CodeCop}", "${PerTenantExtensionCop}", "${UICop}"]
