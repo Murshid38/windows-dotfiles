@@ -257,8 +257,9 @@
 
   "al.enableCodeAnalysis": true,
   "git.useEditorAsCommitInput": false,
-  "workbench.colorTheme": "Kanagawa",
+  "workbench.colorTheme": "Everforest Dark",
   "glassit.alpha": 220,
-  "workbench.activityBar.visible": false
+  "workbench.activityBar.visible": false,
+  "window.zoomLevel": 1
   // "al.codeAnalyzers": ["${CodeCop}", "${PerTenantExtensionCop}", "${UICop}"]
 }
