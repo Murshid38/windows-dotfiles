@@ -1,12 +1,12 @@
 {
   "workbench.colorCustomizations": {
-    "editorCursor.foreground": "#ffffff",
+    // "editorCursor.foreground": "#ffffff",
     "editorCursor.background": "#000",
     "terminalCursor.foreground": "#ffffff"
   },
 
   "editor.fontFamily": "FiraCode NFM Retina",
-  "editor.lineHeight": 22,
+  "editor.lineHeight": 24,
   "files.autoSave": "onFocusChange",
   "editor.wordWrap": "on",
   "editor.formatOnSave": true,
@@ -15,10 +15,12 @@
   "workbench.iconTheme": "easy-icons",
   "workbench.editor.revealIfOpen": true,
   "workbench.editor.showTabs": false,
+  "editor.cursorBlinking": "solid",
 
   "workbench.startupEditor": "none",
   "security.workspace.trust.untrustedFiles": "open",
   "editor.inlineSuggest.enabled": true,
+  "editor.suggest.insertMode": "replace",
 
   "breadcrumbs.enabled": false,
   "editor.lineNumbers": "relative",
@@ -207,6 +209,7 @@
   ],
 
   "editor.minimap.enabled": false,
+  "editor.fontSize": 14,
   "terminal.integrated.fontFamily": "MesloLGM Nerd Font",
   "workbench.sideBar.location": "right",
   "window.titleBarStyle": "custom",
@@ -257,9 +260,8 @@
 
   "al.enableCodeAnalysis": true,
   "git.useEditorAsCommitInput": false,
-  "workbench.colorTheme": "Everforest Dark",
+  "workbench.colorTheme": "Kanagawa",
   "glassit.alpha": 220,
-  "workbench.activityBar.visible": false,
-  "window.zoomLevel": 1
+  "workbench.activityBar.visible": false
   // "al.codeAnalyzers": ["${CodeCop}", "${PerTenantExtensionCop}", "${UICop}"]
 }
