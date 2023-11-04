@@ -1,6 +1,9 @@
 {
   "workbench.colorCustomizations": {
-    // "editorCursor.foreground": "#ffffff",
+    // "titleBar.activeBackground": "#391742",
+    // "titleBar.activeForeground": "#ffffff",
+    // "activityBar.foreground": "#ffffff",
+    "editorCursor.foreground": "#ffffff",
     "editorCursor.background": "#000",
     "terminalCursor.foreground": "#ffffff"
   },
@@ -39,6 +42,11 @@
 
   "vim.normalModeKeyBindingsNonRecursive": [
     // NAVIGATION
+    //show all commands
+    {
+      "before": ["leader", "leader"],
+      "commands": ["workbench.action.showCommands"]
+    },
     //quick open
     {
       "before": ["leader", "p", "f"],
@@ -260,8 +268,11 @@
 
   "al.enableCodeAnalysis": true,
   "git.useEditorAsCommitInput": false,
-  "workbench.colorTheme": "Kanagawa",
   "glassit.alpha": 220,
-  "workbench.activityBar.visible": false
+  "workbench.activityBar.visible": false,
+  "telemetry.telemetryLevel": "off",
+  "editor.stickyScroll.enabled": true,
+  "window.zoomLevel": 1,
+  "workbench.colorTheme": "Doom Emacs"
   // "al.codeAnalyzers": ["${CodeCop}", "${PerTenantExtensionCop}", "${UICop}"]
 }
