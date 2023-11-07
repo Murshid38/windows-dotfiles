@@ -39,6 +39,7 @@
   "vim.easymotion": false,
   "vim.camelCaseMotion.enable": true,
   "vim.surround": true,
+  "vim.searchHighlightColor": "#fff",
 
   "vim.normalModeKeyBindingsNonRecursive": [
     // NAVIGATION
@@ -49,7 +50,7 @@
     },
     //quick open
     {
-      "before": ["leader", "p", "f"],
+      "before": ["leader", ","],
       "commands": ["workbench.action.quickOpen"]
     },
     {
@@ -144,6 +145,10 @@
       "commands": ["workbench.view.scm"]
     },
     {
+      "before": [""],
+      "commands": ["al.publishNoDebug"]
+    },
+    {
       "before": ["leader", "p", "p"],
       "commands": ["al.publishNoDebug"]
     },
@@ -202,6 +207,10 @@
     {
       "before": ["leader", "c", "c"],
       "commands": ["code-runner.run"]
+    },
+    {
+      "before": ["leader", "c", "l"],
+      "commands": ["editor.action.commentLine"]
     }
   ],
 
@@ -213,7 +222,10 @@
     { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
     { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
     // toggle comment selection
-    { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] }
+    {
+      "before": ["leader", "c", "l"],
+      "commands": ["editor.action.commentLine"]
+    }
   ],
 
   "editor.minimap.enabled": false,
@@ -266,13 +278,13 @@
     "editor.semanticHighlighting.enabled": true
   },
 
-  "al.enableCodeAnalysis": true,
   "git.useEditorAsCommitInput": false,
-  "glassit.alpha": 220,
   "workbench.activityBar.visible": false,
   "telemetry.telemetryLevel": "off",
   "editor.stickyScroll.enabled": true,
-  "window.zoomLevel": 1,
-  "workbench.colorTheme": "Doom Emacs"
+  "workbench.colorTheme": "Eva Dark",
+  "window.title": "${dirty}${folderName}"
+
+  // "al.enableCodeAnalysis": true,
   // "al.codeAnalyzers": ["${CodeCop}", "${PerTenantExtensionCop}", "${UICop}"]
 }

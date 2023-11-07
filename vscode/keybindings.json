@@ -339,6 +339,7 @@
     "key": "ctrl+e",
     "command": "-workbench.action.quickOpen"
   },
+  //suggestion selection
   {
     "key": "ctrl+k",
     "command": "selectPrevSuggestion",
@@ -364,6 +365,7 @@
     "command": "acceptSelectedSuggestion",
     "when": "acceptSuggestionOnEnter && suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && suggestionMakesTextEdit && textInputFocus"
   },
+  // quick open selection
   {
     "key": "ctrl+j",
     "command": "workbench.action.quickOpenSelectNext",
@@ -378,5 +380,21 @@
     "key": "ctrl+l",
     "command": "workbench.action.acceptSelectedQuickOpenItem",
     "when": "inQuickOpen"
+  },
+  // code action selection
+  {
+    "key": "ctrl+j",
+    "command": "selectNextCodeAction",
+    "when": "codeActionMenuVisible"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "selectPrevCodeAction",
+    "when": "codeActionMenuVisible"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "acceptSelectedCodeAction",
+    "when": "codeActionMenuVisible"
   }
 ]
