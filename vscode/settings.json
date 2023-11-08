@@ -16,8 +16,12 @@
   "editor.formatOnType": true,
   "editor.inlayHints.enabled": "offUnlessPressed",
   "workbench.iconTheme": "easy-icons",
-  "workbench.editor.revealIfOpen": true,
+
   "workbench.editor.showTabs": false,
+  "workbench.editor.limit.enabled": true,
+  "workbench.editor.limit.perEditorGroup": false,
+  "workbench.editor.limit.value": 2,
+
   "editor.cursorBlinking": "solid",
 
   "workbench.startupEditor": "none",
