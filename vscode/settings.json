@@ -29,6 +29,7 @@
   "editor.lineNumbers": "relative",
   "editor.linkedEditing": true,
   "editor.cursorSurroundingLines": 8,
+  "git.confirmSync": false,
 
   "projectManager.any.baseFolders": ["C:\\Users\\mursh\\Documents\\AL"],
   "projectManager.sortList": "Recent",
