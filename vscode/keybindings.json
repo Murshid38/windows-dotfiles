@@ -386,5 +386,13 @@
     "key": "ctrl+l",
     "command": "acceptSelectedCodeAction",
     "when": "codeActionMenuVisible"
+  },
+  {
+    "key": "ctrl+shift+/",
+    "command": "editor.action.jumpToBracket"
+  },
+  {
+    "key": "ctrl+shift+\\",
+    "command": "editor.action.selectToBracket"
   }
 ]

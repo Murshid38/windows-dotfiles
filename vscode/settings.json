@@ -216,6 +216,18 @@
     {
       "before": ["leader", "c", "l"],
       "commands": ["editor.action.commentLine"]
+    },
+    {
+      "before": ["leader", "f", "n"],
+      "commands": ["extension.advancedNewFile"]
+    },
+    {
+      "before": ["leader", "f", "s"],
+      "commands": [":w!"]
+    },
+    {
+      "before": ["leader", "f", "o"],
+      "commands": ["revealFileInOS"]
     }
   ],
 
