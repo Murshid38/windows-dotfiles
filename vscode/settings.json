@@ -300,7 +300,8 @@
   "telemetry.telemetryLevel": "off",
   "editor.stickyScroll.enabled": true,
   "workbench.colorTheme": "Eva Dark",
-  "window.title": "${dirty}${folderName}"
+  "window.title": "${dirty}${folderName}",
+  "window.zoomLevel": 1
 
   // "al.enableCodeAnalysis": true,
   // "al.codeAnalyzers": ["${CodeCop}", "${PerTenantExtensionCop}", "${UICop}"]
