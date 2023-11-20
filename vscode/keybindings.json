@@ -82,11 +82,6 @@
     "command": "workbench.action.toggleFullScreen"
   },
   // FILE TREE
-  // {
-  //   "key": "ctrl+e",
-  //   "command": "workbench.action.closeSidebar",
-  //   "when": "sideBarFocus"
-  // },
   {
     "key": "ctrl+e",
     "command": "workbench.action.toggleSidebarVisibility"
