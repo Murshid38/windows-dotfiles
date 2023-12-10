@@ -9,6 +9,12 @@
     },
 
     "editor.fontFamily": "JetBrains Mono",
+    "scm.inputFontFamily": "JetBrains Mono",
+    "debug.console.fontFamily": "JetBrains Mono",
+    "editor.codeLensFontFamily": "JetBrains Mono",
+    "editor.inlayHints.fontFamily": "JetBrains Mono",
+    "markdown.preview.fontFamily": "JetBrains Mono",
+    "notebook.outputFontFamily": "JetBrains Mono",
     "editor.lineHeight": 24,
     "files.autoSave": "onFocusChange",
     "editor.wordWrap": "on",
@@ -319,7 +325,7 @@
     "workbench.activityBar.visible": false,
     "telemetry.telemetryLevel": "off",
     "editor.stickyScroll.enabled": true,
-    "workbench.colorTheme": "One Dark Pro Darker",
+    "workbench.colorTheme": "One Dark Pro",
     "window.title": "${dirty}${folderName}",
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
