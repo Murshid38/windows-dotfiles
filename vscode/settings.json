@@ -234,15 +234,15 @@
             "commands": ["revealFileInOS"]
         },
         {
-            "before": ["leader", "w", "d"],
+            "before": ["leader", "v", "d"],
             "commands": ["workbench.action.decreaseViewWidth"]
         },
         {
-            "before": ["leader", "w", "i"],
+            "before": ["leader", "v", "i"],
             "commands": ["workbench.action.increaseViewWidth"]
         },
         {
-            "before": ["leader", "w", "s"],
+            "before": ["leader", "v", "s"],
             "commands": ["workbench.action.evenEditorWidths"]
         },
         {
