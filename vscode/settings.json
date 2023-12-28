@@ -325,13 +325,13 @@
     "workbench.activityBar.visible": false,
     "telemetry.telemetryLevel": "off",
     "editor.stickyScroll.enabled": true,
-    "workbench.colorTheme": "One Dark Pro",
     "window.title": "${dirty}${folderName}",
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "editor.formatOnPaste": true,
-    "window.zoomLevel": 1
+    "window.zoomLevel": 1,
+    "workbench.colorTheme": "One Dark Pro"
 
     // "al.enableCodeAnalysis": true,
     // "al.codeAnalyzers": ["${CodeCop}", "${PerTenantExtensionCop}", "${UICop}"]
