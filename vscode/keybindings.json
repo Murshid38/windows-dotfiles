@@ -61,15 +61,6 @@
         "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible"
     },
     {
-        "key": "shift+alt+j",
-        "command": "editor.action.moveLinesDownAction"
-    },
-    {
-        "key": "shift+alt+k",
-        "command": "editor.action.moveLinesUpAction",
-        "when": "editorTextFocus && !editorReadonly"
-    },
-    {
         "key": "ctrl+alt+,",
         "command": "toggleVim"
     },
@@ -199,10 +190,6 @@
         "key": "ctrl+h",
         "command": "-editor.action.startFindReplaceAction",
         "when": "editorFocus || editorIsOpen"
-    },
-    {
-        "key": "ctrl+h",
-        "command": "editor.action.startFindReplaceAction"
     },
     {
         "key": "ctrl+k ctrl+x",
