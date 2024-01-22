@@ -8,13 +8,13 @@
         "terminalCursor.foreground": "#ffffff"
     },
 
-    "editor.fontFamily": "FiraCode Nerd Font Mono",
-    "scm.inputFontFamily": "JetBrains Mono",
-    "debug.console.fontFamily": "JetBrains Mono",
-    "editor.codeLensFontFamily": "JetBrains Mono",
-    "editor.inlayHints.fontFamily": "JetBrains Mono",
-    "markdown.preview.fontFamily": "JetBrains Mono",
-    "notebook.outputFontFamily": "JetBrains Mono",
+    "editor.fontFamily": "Source Code Pro",
+    "scm.inputFontFamily": "Source Code Pro",
+    "debug.console.fontFamily": "Source Code Pro",
+    "editor.codeLensFontFamily": "Source Code Pro",
+    "editor.inlayHints.fontFamily": "Source Code Pro",
+    "markdown.preview.fontFamily": "Source Code Pro",
+    "notebook.outputFontFamily": "Source Code Pro",
     "editor.lineHeight": 24,
     "files.autoSave": "onFocusChange",
     "editor.wordWrap": "on",
@@ -44,7 +44,7 @@
     "vim.leader": "<Space>",
     "vim.hlsearch": false,
     "vim.useSystemClipboard": true,
-    "vim.easymotion": false,
+    "vim.easymotion": true,
     "vim.camelCaseMotion.enable": true,
     "vim.surround": true,
     "vim.searchHighlightColor": "#fff",
@@ -53,8 +53,8 @@
         // NAVIGATION
         //show all commands
         {
-            "before": ["leader", "leader"],
-            "commands": ["workbench.action.showCommands"]
+            // "before": ["leader", "leader"],
+            // "commands": ["workbench.action.showCommands"]
         },
         //quick open
         {
@@ -334,10 +334,10 @@
     },
     "editor.formatOnPaste": true,
     "workbench.colorTheme": "Catppuccin Macchiato",
-    "window.zoomLevel": 1,
     "catppuccin.italicKeywords": false,
     "catppuccin.italicComments": false,
-    "oneDarkPro.italic": false
+    "oneDarkPro.italic": false,
+    "window.zoomLevel": 1
 
     // "al.enableCodeAnalysis": true,
     // "al.codeAnalyzers": ["${CodeCop}", "${PerTenantExtensionCop}", "${UICop}"]
