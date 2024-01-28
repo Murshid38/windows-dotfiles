@@ -12,9 +12,8 @@
 ;(menu-bar-mode 1)
 
 ;;default font
-;(set-face-attribute 'default nil :font "Source Code Pro-12")
-(set-face-attribute 'default nil :font "FiraCode Nerd Font Mono-12")
-;(set-face-attribute 'default nil :font "JetBrains Mono-12")
+(set-face-attribute 'default nil :font "Source Code Pro-12")
+;(set-face-attribute 'default nil :font "FiraCode Nerd Font Mono-12")
 
 ;;theme
 (custom-set-variables
