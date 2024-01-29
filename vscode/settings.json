@@ -8,7 +8,7 @@
         "terminalCursor.foreground": "#ffffff"
     },
 
-    "editor.fontFamily": "FiraCode Nerd Font Mono",
+    "editor.fontFamily": "Source Code Pro",
     "scm.inputFontFamily": "Source Code Pro",
     "debug.console.fontFamily": "Source Code Pro",
     "editor.codeLensFontFamily": "Source Code Pro",
@@ -272,7 +272,7 @@
     ],
 
     "editor.minimap.enabled": false,
-    "editor.fontSize": 14,
+    "editor.fontSize": 15,
     "terminal.integrated.fontFamily": "MesloLGM Nerd Font",
     "workbench.sideBar.location": "right",
     "window.titleBarStyle": "custom",
@@ -333,10 +333,11 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "editor.formatOnPaste": true,
-    "workbench.colorTheme": "Catppuccin Macchiato",
+    "workbench.colorTheme": "Catppuccin Mocha",
     "catppuccin.italicKeywords": false,
     "catppuccin.italicComments": false,
-    "oneDarkPro.italic": false
+    "oneDarkPro.italic": false,
+    "window.zoomLevel": 1
 
     // "al.enableCodeAnalysis": true,
     // "al.codeAnalyzers": ["${CodeCop}", "${PerTenantExtensionCop}", "${UICop}"]

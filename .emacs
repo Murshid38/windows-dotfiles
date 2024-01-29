@@ -12,9 +12,7 @@
 ;(menu-bar-mode 1)
 
 ;;default font
-;(set-face-attribute 'default nil :font "Source Code Pro-12")
-(set-face-attribute 'default nil :font "FiraCode Nerd Font Mono-12")
-;(set-face-attribute 'default nil :font "JetBrains Mono-12")
+(set-face-attribute 'default nil :font "Source Code Pro-12")
 
 ;;theme
 (custom-set-variables
@@ -54,3 +52,21 @@
 (global-set-key (kbd "C-c h c") 'harpoon-clear)
 (global-set-key (kbd "C-8") 'harpoon-go-to-1)
 (global-set-key (kbd "C-9") 'harpoon-go-to-2)
+
+;setting single escape key instead of thrice 
+(global-set-key (kbd "<escape>")      'keyboard-escape-quit)
+
+;indeting 4 spaces
+(setq-default indent-tabs-mode nil)
+(setq-default tab-width 4)
+(setq indent-line-function 'insert-tab)
+
+; terminal emacs background transparent
+(set-frame-parameter (selected-frame) 'background-mode 'dark)
+(add-to-list 'default-frame-alist '(background-color . "unspecified-bg"))
+
+; mode line background transparent for terminal only
+(if (not (display-graphic-p))
+    (custom-set-faces
+     '(mode-line ((t (:background "unspecified-bg" :foreground "unspecified-fg"))))
+     '(mode-line-inactive ((t (:background "unspecified-bg" :foreground "unspecified-fg"))))))

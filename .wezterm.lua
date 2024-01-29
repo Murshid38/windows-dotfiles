@@ -12,10 +12,10 @@ return {
     disable_default_key_bindings = true,
     exit_behavior = 'Close',
     font = wezterm.font {
-        -- family = 'FiraCode Nerd Font Mono',
+        family = 'FiraCode Nerd Font Mono',
         -- family = 'Fira Mono for Powerline',
         -- family = 'JetBrains Mono',
-        family = 'Source Code Pro',
+        -- family = 'Source Code Pro',
         weight = 'Regular',
         -- stretch = 'Normal',
         -- style = 'Normal',
