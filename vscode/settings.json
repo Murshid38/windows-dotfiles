@@ -268,6 +268,10 @@
         {
             "before": ["leader", "c", "l"],
             "commands": ["editor.action.commentLine"]
+        },
+        {
+            "before": ["leader", "c", "c"],
+            "commands": ["code-runner.run"]
         }
     ],
 
@@ -325,7 +329,6 @@
     },
 
     "git.useEditorAsCommitInput": false,
-    "workbench.activityBar.visible": false,
     "telemetry.telemetryLevel": "off",
     "editor.stickyScroll.enabled": true,
     "window.title": "${dirty}${folderName}",
@@ -337,7 +340,8 @@
     "catppuccin.italicKeywords": false,
     "catppuccin.italicComments": false,
     "oneDarkPro.italic": false,
-    "window.zoomLevel": 1
+    "window.zoomLevel": 1,
+    "workbench.activityBar.visible": false
 
     // "al.enableCodeAnalysis": true,
     // "al.codeAnalyzers": ["${CodeCop}", "${PerTenantExtensionCop}", "${UICop}"]

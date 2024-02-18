@@ -12,7 +12,8 @@ return {
     disable_default_key_bindings = true,
     exit_behavior = 'Close',
     font = wezterm.font {
-        family = 'FiraCode Nerd Font Mono',
+        -- family = 'FiraCode Nerd Font Mono',
+        family = 'DejaVu Sans Mono for Powerline',
         -- family = 'Fira Mono for Powerline',
         -- family = 'JetBrains Mono',
         -- family = 'Source Code Pro',
@@ -51,7 +52,10 @@ return {
         bottom = 0,
     },
     wsl_domains = wsl_domains,
-    color_scheme = 'Batman',
+    -- color_scheme = 'Batman',
     -- color_scheme = 'Dracula',
-    -- color_scheme = 'Catppuccin Macchiato',
+    color_scheme = 'Catppuccin Macchiato',
+    colors = {
+        background = 'black',
+    },
 }
