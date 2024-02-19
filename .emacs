@@ -1,3 +1,15 @@
+; evil mode
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
+(require 'package)
+(package-initialize)
+(package-install 'evil)
+(evil-mode 1)
+
+(define-key evil-normal-state-map (kbd "C-u") 'evil-scroll-up)
+(define-key evil-normal-state-map (kbd "C-e") 'end-of-line)
+(define-key evil-normal-state-map (kbd "C-p") 'previous-line)
+(define-key evil-normal-state-map (kbd "C-n") 'next-line)
+
 ;disable the startup screen
 (setq inhibit-startup-screen t)
 
@@ -31,7 +43,7 @@
  ;; If there is more than one, they won't work right.
  '(custom-enabled-themes '(modus-vivendi))
  '(package-selected-packages
-   '(csharp-mode multiple-cursors sqlup-mode ob-sql-mode lsp-ui company ## lsp-mode which-key harpoon)))
+   '(evil csharp-mode multiple-cursors sqlup-mode ob-sql-mode lsp-ui company ## lsp-mode which-key harpoon)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -78,10 +90,10 @@
 (add-to-list 'default-frame-alist '(background-color . "unspecified-bg"))
 
 ; mode line background transparent for terminal only
-(if (not (display-graphic-p))
-    (custom-set-faces
-     '(mode-line ((t (:background "unspecified-bg" :foreground "unspecified-fg"))))
-     '(mode-line-inactive ((t (:background "unspecified-bg" :foreground "unspecified-fg"))))))
+;(if (not (display-graphic-p))
+;    (custom-set-faces
+;     '(mode-line ((t (:background "unspecified-bg" :foreground "unspecified-fg"))))
+;     '(mode-line-inactive ((t (:background "unspecified-bg" :foreground "unspecified-fg"))))))
 
 ; load ob-csharp.el
 (load "~/.emacs.d/ob-csharp.el")
