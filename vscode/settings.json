@@ -340,8 +340,8 @@
     "catppuccin.italicKeywords": false,
     "catppuccin.italicComments": false,
     "oneDarkPro.italic": false,
-    "window.zoomLevel": 1,
-    "workbench.activityBar.visible": false
+    "workbench.activityBar.visible": false,
+    "window.zoomLevel": 1
 
     // "al.enableCodeAnalysis": true,
     // "al.codeAnalyzers": ["${CodeCop}", "${PerTenantExtensionCop}", "${UICop}"]

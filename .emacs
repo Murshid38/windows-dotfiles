@@ -3,7 +3,7 @@
 (require 'package)
 (package-initialize)
 (package-install 'evil)
-(evil-mode 1)
+(evil-mode -1)
 
 (define-key evil-normal-state-map (kbd "C-u") 'evil-scroll-up)
 (define-key evil-normal-state-map (kbd "C-e") 'end-of-line)
@@ -135,3 +135,5 @@
 (setq make-backup-files nil)
 ;disable auto save
 (setq auto-save-default nil)
+;disable lock files
+(setq create-lockfiles nil)

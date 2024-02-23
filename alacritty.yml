@@ -1,0 +1,71 @@
+# Font config:
+font:
+  # Normal (roman):
+  normal:
+    family: Source Code Pro 
+    style: Regular
+
+  bold:
+    family: Source Code Pro
+    style: Bold
+
+  italic:
+    family: Source Code Pro
+    style: Italic
+
+  bold_italic:
+    family: Source Code Pro
+    style: Bold Italic
+
+  book:
+    family: Source Code Pro
+    style: Book
+
+  size: 14.0
+
+Default directory setup: null
+shell:
+  program: "powershell.exe"
+  args:
+    - "-NoExit"
+    - "-Command"
+    - "cd 'D:\\wip'"
+colors:
+  # Default colors
+  primary:
+    background: '#000000'
+    foreground: '#ffffff'
+
+      # cursor:
+      # text: '#ffffff'
+      # cursor: '#ffffff'
+
+  # Normal colors
+  normal:
+    black: '#4e4e4e'
+    red: '#ff6c60'
+    green: '#a8ff60'
+    yellow: '#ffffb6'
+    blue: '#96cbfe'
+    magenta: '#ff73fd'
+    cyan: '#c6c5fe'
+    white: '#eeeeee'
+
+  # Bright colors
+  bright:
+    black: '#7c7c7c'
+    red: '#ffb6b0'
+    green: '#ceffab'
+    yellow: '#ffffcb'
+    blue: '#b5dcfe'
+    magenta: '#ff9cfe'
+    cyan: '#dfdffe'
+    white: '#ffffff'
+theme: IR-Black
+
+  # key_bindings:
+  # - { key: Space, mods: Control, chars: "\x00" }
+
+key_bindings:
+  - { key: Slash, mods: Control, chars: "\x1f" }
+  - { key: Space, mods: Control, chars: "\x00" }
