@@ -34,6 +34,7 @@
 
 ;;default font
 (set-face-attribute 'default nil :font "DejaVu Sans Mono for Powerline-12")
+;(set-face-attribute 'default nil :font "JetBrains Mono-12")
 
 ;;theme
 (custom-set-variables
@@ -43,7 +44,7 @@
  ;; If there is more than one, they won't work right.
  '(custom-enabled-themes '(modus-vivendi))
  '(package-selected-packages
-   '(evil csharp-mode multiple-cursors sqlup-mode ob-sql-mode lsp-ui company ## lsp-mode which-key harpoon)))
+   '(org-bullets evil csharp-mode multiple-cursors sqlup-mode ob-sql-mode lsp-ui company ## lsp-mode which-key harpoon)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -122,6 +123,9 @@
 
 (put 'upcase-region 'disabled nil)
 
+;; delete the region when typing, just like as we expect nowadays.
+(delete-selection-mode t)
+
 (require 'multiple-cursors)
 (global-set-key (kbd "C-c m c") 'mc/edit-lines)
 (global-set-key (kbd "C->") 'mc/mark-next-like-this)
@@ -137,3 +141,23 @@
 (setq auto-save-default nil)
 ;disable lock files
 (setq create-lockfiles nil)
+;; Keep all backup and auto-save files in one directory
+(setq backup-directory-alist '(("." . "~/.emacs.d/backups")))
+(setq auto-save-file-name-transforms '((".*" "~/.emacs.d/auto-save-list/" t)))
+
+; disabling confirmation for evaluation
+(defun my-org-confirm-babel-evaluate (lang body)
+  "Do not confirm evaluation for these languages."
+  (not (or (string= lang "C")
+           (string= lang "sql")
+           (string= lang "csharp")
+           (string= lang "csharp")
+           (string= lang "emacs-lisp")
+           (string= lang "js"))))
+(setq org-confirm-babel-evaluate 'my-org-confirm-babel-evaluate)
+
+; getting rid of asterisks mark for headings
+(use-package org-bullets
+  :ensure t
+  :config
+  (add-hook 'org-mode-hook #'org-bullets-mode))

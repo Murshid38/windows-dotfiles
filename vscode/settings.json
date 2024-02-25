@@ -21,9 +21,8 @@
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
     "editor.inlayHints.enabled": "offUnlessPressed",
-    "workbench.iconTheme": "easy-icons",
 
-    "workbench.editor.showTabs": false,
+    "workbench.editor.showTabs": "single",
     "workbench.startupEditor": "none",
     "security.workspace.trust.untrustedFiles": "open",
     "editor.inlineSuggest.enabled": true,
@@ -322,7 +321,7 @@
     "al.browser": "Chrome",
 
     "[al]": {
-        "editor.wordBasedSuggestions": false,
+        "editor.wordBasedSuggestions": "off",
         "editor.suggestSelection": "first",
         "editor.formatOnSave": true,
         "editor.semanticHighlighting.enabled": true
@@ -336,12 +335,12 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "editor.formatOnPaste": true,
-    "workbench.colorTheme": "Catppuccin Mocha",
     "catppuccin.italicKeywords": false,
     "catppuccin.italicComments": false,
     "oneDarkPro.italic": false,
-    "workbench.activityBar.visible": false,
-    "window.zoomLevel": 1
+    "window.zoomLevel": 1,
+    "workbench.activityBar.location": "hidden",
+    "workbench.colorTheme": "Catppuccin Mocha"
 
     // "al.enableCodeAnalysis": true,
     // "al.codeAnalyzers": ["${CodeCop}", "${PerTenantExtensionCop}", "${UICop}"]
