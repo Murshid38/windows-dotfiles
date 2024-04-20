@@ -8,13 +8,13 @@
         "terminalCursor.foreground": "#ffffff"
     },
 
-    "editor.fontFamily": "Source Code Pro",
-    "scm.inputFontFamily": "Source Code Pro",
-    "debug.console.fontFamily": "Source Code Pro",
-    "editor.codeLensFontFamily": "Source Code Pro",
-    "editor.inlayHints.fontFamily": "Source Code Pro",
-    "markdown.preview.fontFamily": "Source Code Pro",
-    "notebook.outputFontFamily": "Source Code Pro",
+    "editor.fontFamily": "JetBrains Mono",
+    "scm.inputFontFamily": "JetBrains Mono",
+    "debug.console.fontFamily": "JetBrains Mono",
+    "editor.codeLensFontFamily": "JetBrains Mono",
+    "editor.inlayHints.fontFamily": "JetBrains Mono",
+    "markdown.preview.fontFamily": "JetBrains Mono",
+    "notebook.outputFontFamily": "JetBrains Mono",
     "editor.lineHeight": 24,
     "files.autoSave": "onFocusChange",
     "editor.wordWrap": "on",
@@ -151,10 +151,10 @@
             "commands": ["workbench.action.debug.stop"],
             "when": ["inDebugMode && !focusedSessionIsAttach"]
         },
-        {
-            "before": ["leader", "g", "s"],
-            "commands": ["workbench.view.scm"]
-        },
+        // {
+        //     "before": ["leader", "g", "s"],
+        //     "commands": ["workbench.view.scm"]
+        // },
         {
             "before": [""],
             "commands": ["al.publishNoDebug"]
@@ -163,34 +163,34 @@
             "before": ["leader", "p", "p"],
             "commands": ["al.publishNoDebug"]
         },
-        {
-            "before": ["leader", "g", "o"],
-            "commands": ["git.checkout"]
-        },
-        {
-            "before": ["leader", "g", "f"],
-            "commands": ["git.pullFrom"]
-        },
-        {
-            "before": ["leader", "g", "a"],
-            "commands": ["git.stageAll"]
-        },
-        {
-            "before": ["leader", "g", "g"],
-            "commands": ["git.sync"]
-        },
-        {
-            "before": ["leader", "g", "c"],
-            "commands": ["git.commitAll"]
-        },
-        {
-            "before": ["leader", "g", "m"],
-            "commands": ["git.merge"]
-        },
-        {
-            "before": ["leader", "g", "u"],
-            "commands": ["git.undoCommit"]
-        },
+        // {
+        //     "before": ["leader", "g", "o"],
+        //     "commands": ["git.checkout"]
+        // },
+        // {
+        //     "before": ["leader", "g", "f"],
+        //     "commands": ["git.pullFrom"]
+        // },
+        // {
+        //     "before": ["leader", "g", "a"],
+        //     "commands": ["git.stageAll"]
+        // },
+        // {
+        //     "before": ["leader", "g", "g"],
+        //     "commands": ["git.sync"]
+        // },
+        // {
+        //     "before": ["leader", "g", "c"],
+        //     "commands": ["git.commitAll"]
+        // },
+        // {
+        //     "before": ["leader", "g", "m"],
+        //     "commands": ["git.merge"]
+        // },
+        // {
+        //     "before": ["leader", "g", "u"],
+        //     "commands": ["git.undoCommit"]
+        // },
         {
             "before": ["leader", "a"],
             "commands": ["vscode-harpoon.addEditor"]
@@ -339,9 +339,8 @@
     "catppuccin.italicComments": false,
     "oneDarkPro.italic": false,
     "window.zoomLevel": 1,
-    "workbench.activityBar.location": "hidden",
-    "workbench.colorTheme": "Catppuccin Mocha"
 
+    "liveServer.settings.CustomBrowser": "chrome"
     // "al.enableCodeAnalysis": true,
     // "al.codeAnalyzers": ["${CodeCop}", "${PerTenantExtensionCop}", "${UICop}"]
 }

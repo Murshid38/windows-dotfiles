@@ -10,17 +10,20 @@
 (define-key evil-normal-state-map (kbd "C-p") 'previous-line)
 (define-key evil-normal-state-map (kbd "C-n") 'next-line)
 
+;move to trash
+(setq-default delete-by-moving-to-trash t)
+
 ;disable the startup screen
 (setq inhibit-startup-screen t)
 
 ; applying same theme for new frame
-(defun apply-my-theme (frame)
-  (select-frame frame)
-  (load-theme 'modus-vivendi t))
+;; (defun apply-my-theme (frame)
+;;   (select-frame frame)
+;;   (load-theme 'modus-vivendi t))
 
-(if (daemonp)
-    (add-hook 'after-make-frame-functions #'apply-my-theme)
-  (load-theme 'modus-vivendi t))
+;; (if (daemonp)
+;;     (add-hook 'after-make-frame-functions #'apply-my-theme)
+;;   (load-theme 'modus-vivendi t))
 
 ;setting height and width of startup frame size
 (add-to-list 'default-frame-alist '(height . 25))
@@ -28,13 +31,13 @@
 
 ;change below to 0 to hide menu and tool bar
 (tool-bar-mode 0)
-;(menu-bar-mode 0)
+(menu-bar-mode 0)
 ;(tool-bar-mode 1)
-(menu-bar-mode 1)
+;(menu-bar-mode 1)
 
 ;;default font
-(set-face-attribute 'default nil :font "DejaVu Sans Mono for Powerline-12")
-;(set-face-attribute 'default nil :font "JetBrains Mono-12")
+;(set-face-attribute 'default nil :font "DejaVu Sans Mono for Powerline-12")
+(set-face-attribute 'default nil :font "JetBrains Mono-12")
 
 ;;theme
 (custom-set-variables
@@ -42,7 +45,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-enabled-themes '(modus-vivendi))
+ '(custom-enabled-themes nil)
  '(package-selected-packages
    '(org-bullets evil csharp-mode multiple-cursors sqlup-mode ob-sql-mode lsp-ui company ## lsp-mode which-key harpoon)))
 (custom-set-faces
